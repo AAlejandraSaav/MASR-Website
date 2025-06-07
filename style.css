@@ -1,100 +1,47 @@
-/* Estilos generales */
+/* Estilo general */
 body {
-  background-color: #121212; /* fondo oscuro */
+  background-color: #121212;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Navegación */
-nav {
+/* Páginas con color de fondo específico */
+.videojuegos-page { background-color: #8B0000; }    /* Rojo oscuro */
+.impresion3d-page { background-color: #FFA500; }    /* Naranja */
+.energia-page     { background-color: #1e4620; }    /* Verde oscuro */
+.servicios-page   { background-color: #0e3c70; }    /* Azul oscuro */
+
+header {
   background-color: #1f1f1f;
-  padding: 15px 0;
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
+  padding: 1rem;
+  text-align: center;
 }
 
 nav a {
+  margin: 0 10px;
   text-decoration: none;
-  font-weight: 600;
-  padding: 10px 18px;
-  border-radius: 5px;
-  color: white;
-  transition: background-color 0.3s ease;
+  color: #f0f0f0;
+  font-size: 1rem;
 }
 
-/* Colores por sección */
-nav a.videojuegos {
-  background-color: #e63946; /* rojo */
+nav a:hover {
+  color: #ffcc00;
 }
 
-nav a.videojuegos:hover {
-  background-color: #d62828;
-}
-
-nav a.impresion3d {
-  background-color: #f4a261; /* naranja claro */
-}
-
-nav a.impresion3d:hover {
-  background-color: #e76f51;
-}
-
-nav a.energialimpia {
-  background-color: #f4d35e; /* amarillo */
-  color: #121212;
-}
-
-nav a.energialimpia:hover {
-  background-color: #e9c46a;
-  color: #121212;
-}
-
-nav a.servicios {
-  background-color: #1d3557; /* azul */
-}
-
-nav a.servicios:hover {
-  background-color: #457b9d;
-}
-
-/* Títulos */
-h1, h2 {
+main {
+  padding: 2rem;
   text-align: center;
-  margin-top: 30px;
 }
 
-/* Contenedor principal */
-.container {
-  max-width: 960px;
-  margin: 20px auto;
-  padding: 0 15px;
-}
-
-/* Footer */
 footer {
-  background-color: #222;
-  color: #ccc;
+  background-color: #1f1f1f;
+  padding: 1rem;
   text-align: center;
-  padding: 15px 0;
-  font-size: 14px;
-  margin-top: 40px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
 }
 
-/* Responsividad para dispositivos pequeños */
-@media screen and (max-width: 600px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 10px 0;
-    width: 80%;
-    text-align: center;
-  }
+h1 i, h2 i {
+  margin-right: 8px;
 }
