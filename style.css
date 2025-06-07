@@ -1,161 +1,88 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Fondo oscuro y fuente legible */
+/* Fondo oscuro general */
 body {
   background-color: #121212;
-  color: #f0f0f0;
+  color: #e0e0e0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-/* Contenedor flexible para que el footer se quede abajo */
-main {
-  flex: 1;
-  padding: 1rem;
-}
-
-/* Header */
+/* Encabezado */
 header {
-  background-color: #1e1e1e;
   padding: 1rem;
-  border-bottom: 3px solid #ffcc00;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
+  background-color: #1f1f1f;
+  text-align: center;
+  border-bottom: 2px solid #333;
 }
 
-header h1 {
-  font-size: 2rem;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
-
+/* Navegación */
 nav a {
+  margin: 0 10px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: #ffcc00;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #ffcc00;
-  color: #121212;
-  cursor: pointer;
+  color: #fff;
 }
 
-/* Botón Contacto */
+/* Botones */
 .btn {
-  background-color: #0073e6;
+  padding: 0.5rem 1rem;
+  background-color: #ff3300; /* rojo para llamar la atención */
   color: #fff !important;
-  padding: 0.4rem 1rem;
-  border-radius: 25px;
-  font-weight: 700;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
-  display: inline-block;
-}
-
-.btn:hover {
-  background-color: #005bb5;
-  transform: scale(1.05);
-}
-
-/* Secciones con color según página */
-header h1[style*="color:#ff3300"] {
-  border-bottom: 3px solid #ff3300;
-}
-
-header h1[style*="color:#ffcc00"] {
-  border-bottom: 3px solid #ffcc00;
-}
-
-header h1[style*="color:#0073e6"] {
-  border-bottom: 3px solid #0073e6;
-}
-
-/* Sección principal */
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 1rem;
-  background-color: #222;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-}
-
-/* Formularios */
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 0.6rem;
-  margin: 0.3rem 0 1rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #f0f0f0;
-  font-size: 1rem;
-  resize: vertical;
   transition: background-color 0.3s ease;
 }
 
-form input[type="text"]:focus,
-form input[type="email"]:focus,
-form textarea:focus {
-  background-color: #444;
-  outline: none;
+.btn:hover {
+  background-color: #cc2900;
+}
+
+/* Secciones con colores específicos */
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+
+/* Texto principal */
+main section {
+  padding: 1rem 2rem;
 }
 
 /* Footer */
 footer {
-  background-color: #1e1e1e;
+  background-color: #1f1f1f;
+  color: #aaa;
   text-align: center;
   padding: 1rem;
-  border-top: 3px solid #ffcc00;
+  border-top: 2px solid #333;
+  margin-top: 3rem;
 }
 
-footer p {
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem;
-}
-
-/* Iconos sociales */
+/* Íconos sociales */
 .social-icons a {
-  color: #ffcc00;
-  font-size: 1.3rem;
-  margin: 0 0.5rem;
+  color: #e0e0e0;
+  margin: 0 10px;
+  font-size: 1.5rem;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #0073e6;
+  color: #ff3300;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  nav {
-    flex-direction: column;
-  }
-
   nav a {
-    font-size: 1.2rem;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  main section {
+    padding: 1rem;
   }
 }
