@@ -1,17 +1,18 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #e6f0ff; /* azul claro de fondo */
   text-align: center;
   padding: 40px;
 }
 
 h1 {
-  color: #333;
+  color: #cc0000; /* rojo fuerte */
 }
 
 p {
   font-size: 1.2em;
   margin-bottom: 30px;
+  color: #333;
 }
 
 .button-container {
@@ -21,18 +22,46 @@ p {
   align-items: center;
 }
 
+/* Estilo base para los botones */
 .section-button {
   display: inline-block;
   padding: 15px 30px;
-  background-color: #0077cc;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1.1em;
-  transition: background-color 0.3s ease;
-  width: 250px;
+  transition: all 0.3s ease;
+  width: 260px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.section-button:hover {
-  background-color: #005fa3;
+/* Colores específicos */
+.rojo {
+  background-color: #e63946;
+}
+.rojo:hover {
+  background-color: #c62828;
+}
+
+.azul {
+  background-color: #1d3557;
+}
+.azul:hover {
+  background-color: #0c2340;
+}
+
+.amarillo {
+  background-color: #f4a261;
+}
+.amarillo:hover {
+  background-color: #e07b39;
+}
+
+.naranja {
+  background-color: #ffb703;
+  color: #333;
+}
+.naranja:hover {
+  background-color: #fca311;
 }
