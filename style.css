@@ -1,67 +1,118 @@
+/* Fondo y texto general */
 body {
+  background-color: #121212; /* fondo oscuro */
+  color: #CCCCCC;            /* texto claro */
   font-family: Arial, sans-serif;
-  background-color: #e6f0ff; /* azul claro de fondo */
-  text-align: center;
-  padding: 40px;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: #cc0000; /* rojo fuerte */
+/* Títulos */
+h1, h2 {
+  color: #FFFFFF;
 }
 
-p {
-  font-size: 1.2em;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-/* Estilo base para los botones */
-.section-button {
-  display: inline-block;
-  padding: 15px 30px;
-  color: white;
+/* Enlaces comunes */
+a {
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 1.1em;
-  transition: all 0.3s ease;
-  width: 260px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Colores específicos */
-.rojo {
-  background-color: #e63946;
-}
-.rojo:hover {
-  background-color: #c62828;
-}
-
-.azul {
-  background-color: #1d3557;
-}
-.azul:hover {
-  background-color: #0c2340;
+/* Navegación */
+nav {
+  background-color: #1E1E1E; /* barra un poco menos oscuro */
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
 }
 
-.amarillo {
-  background-color: #f4a261;
+/* Colores por sección para los links del menú */
+nav a.videojuegos {
+  color: #FF0000; /* rojo */
 }
-.amarillo:hover {
-  background-color: #e07b39;
+nav a.impresion3d {
+  color: #FFD700; /* amarillo dorado */
+}
+nav a.energialimpia {
+  color: #FF8C00; /* naranja oscuro */
+}
+nav a.servicios {
+  color: #1E90FF; /* azul dodger */
 }
 
-.naranja {
-  background-color: #ffb703;
-  color: #333;
+nav a:hover {
+  opacity: 0.7;
 }
-.naranja:hover {
-  background-color: #fca311;
+
+/* Colores de fondo específicos por sección para el contenido principal */
+.videojuegos-section {
+  background-color: #330000; /* rojo oscuro */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.impresion3d-section {
+  background-color: #4B4000; /* amarillo oscuro */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.energialimpia-section {
+  background-color: #663C00; /* naranja oscuro */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.servicios-section {
+  background-color: #003366; /* azul oscuro */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Botones para secciones */
+.button-section {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+/* Colores botones */
+.button-videojuegos {
+  background-color: #FF0000;
+}
+
+.button-videojuegos:hover {
+  background-color: #cc0000;
+}
+
+.button-impresion3d {
+  background-color: #FFD700;
+  color: black;
+}
+
+.button-impresion3d:hover {
+  background-color: #e6c200;
+}
+
+.button-energialimpia {
+  background-color: #FF8C00;
+}
+
+.button-energialimpia:hover {
+  background-color: #cc7000;
+}
+
+.button-servicios {
+  background-color: #1E90FF;
+}
+
+.button-servicios:hover {
+  background-color: #0066cc;
 }
